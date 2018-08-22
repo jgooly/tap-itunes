@@ -1,0 +1,10 @@
+{
+	"accessToken": "enter access token",
+	"account": "enter account id",
+	"vendor": "enter vendor id",
+	"version": "2.2",
+	"mode": "Robot.XML",
+	"start_date": "enter start date in format: YYYY-MM-DD",
+	"endpoint_sales": "https://reportingitc-reporter.apple.com/reportservice/sales/v1",
+	"endpoint_finance": "https://reportingitc-reporter.apple.com/reportservice/finance/v1"
+}

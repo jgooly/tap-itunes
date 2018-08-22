@@ -1,0 +1,74 @@
+{
+	"type": ["null", "object"],
+	"properties": {
+		"app_name": {
+			"type": ["null", "string"]
+		},
+		"app_apple_id": {
+			"type": ["null", "string"]
+		},
+		"subscription_name": {
+			"type": ["null", "string"]
+		},
+		"susbcription_apple_id": {
+			"type": ["null", "string"]
+		},
+		"subscription_group_id": {
+			"type": ["null", "string"]
+		},
+		"susbcription_duration": {
+			"type": ["null", "string"]
+		},
+		"customer_price": {
+			"type": ["null", "number"]
+		},
+		"customer_currency": {
+			"type": ["null", "string"]
+		},
+		"developer_proceeds": {
+			"type": ["null", "number"]
+		},
+		"proceeds_currency": {
+			"type": ["null", "string"]
+		},
+		"preserved_pricing": {
+			"type": ["null", "string"]
+		},
+		"proceeds_reason": {
+			"type": ["null", "string"]
+		},
+		"state": {
+			"type": ["null", "string"]
+		},
+		"country": {
+			"type": ["null", "string"]
+		},
+		"device": {
+			"type": ["null", "string"]
+		},
+		"client": {
+			"type": ["null", "string"] 
+		},
+		"active_subscriptions": {
+			"type": ["null", "integer"]
+		},
+		"active_free_trials": {
+			"type": ["null", "integer"]
+		},
+		"marketing_opt_ins": {
+			"type": ["null", "integer"]
+		},
+		"active_pay_up_front_subscriptions": {
+			"type": ["null", "integer"]
+		},
+		"active_pay_as_you_go_subscriptions": {
+			"type": ["null", "integer"]
+		},
+		"billing_retry": {
+			"type": ["null", "integer"]
+		},
+		"date": {
+			"type": ["null", "string"]
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"type": ["null", "object"],
+	"properties": {
+		"event_date": {
+			"type": ["null", "string"]
+		},
+		"event": {
+			"type": ["null", "string"]
+		},
+		"app_name": {
+			"type": ["null", "string"]
+		},
+		"app_apple_id": {
+			"type": ["null", "string"]
+		},
+		"subscription_name": {
+			"type": ["null", "string"]
+		},
+		"subscription_apple_id": {
+			"type": ["null", "string"]
+		},
+		"subscription_group_id": {
+			"type": ["null", "string"]
+		},
+		"subscription_duration": {
+			"type": ["null", "string"]
+		},
+		"trial": {
+			"type": ["null", "string"]
+		},
+		"introductory_price_type": {
+			"type": ["null", "string"]
+		},
+		"trial_duration": {
+			"type": ["null", "string"]
+		},
+		"introductory_price_duration": {
+			"type": ["null", "string"]
+		},
+		"marketing_opt_in": {
+			"type": ["null", "string"]
+		},
+		"marketing_opt_in_duration": {
+			"type": ["null", "string"]
+		},
+		 "preserved_pricing": {
+		 	"type": ["null", "string"]
+		 },
+		 "consecutive_paid_periods": {
+			"type": ["null", "integer"]
+		 },
+		 "original_start_date": {
+			"type": ["null", "string"]
+		 },
+		 "device": {
+		 	"type": ["null", "string"]
+		 },
+		 "client": {
+			"type": ["null", "string"]
+		 },
+		 "state": {
+		 	"type": ["null", "string"]
+		 },
+		 "country": {
+		 	"type": ["null", "string"]
+		 },
+		 "previous_subscription_name": {
+		 	"type": ["null", "string"]
+		 },
+		 "previous_subscription_apple_id": {
+		 	"type": ["null", "string"]
+		 },
+		 "days_before_canceling": {
+			"type": ["null", "integer"]
+		 },
+		 "cancellation_reason": {
+			"type": ["null", "string"]
+		 },
+		 "days_canceled": {
+		 	"type": ["null", "integer"]
+		 },
+		 "quantity": {
+		 	"type": ["null", "integer"]
+		 }
+	}
+}
