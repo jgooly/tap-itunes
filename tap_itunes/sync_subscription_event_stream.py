@@ -13,13 +13,12 @@ PARSER.add_argument(
 
 ARGS = PARSER.parse_args()
 LOGGER = singer.get_logger()
-CONFIG = utils.load_tap_setting(path='config.json')
+CONFIG = utils.load_tap_setting(path=ARGS.config)
 STATE_DATE_FORMAT = '%Y-%m-%d'
 ITUNES_REQUEST_DATE_FORMAT = '%Y%m%d'
 TIMEZONE = 'America/Los_Angeles'
 
 SUBSCRIPTION_EVENT_SCHEMA = utils.load_schema('subscription_event')
-
 
 # Determine if the streams need to be updated.
 def find_state():
@@ -46,7 +45,7 @@ def sync_date(dates_to_fetch,
               state_date_format=STATE_DATE_FORMAT,
               config=CONFIG):
     if len(dates_to_fetch) == 0:
-        LOGGER.info('Subscription event stream is already up to date.')
+        LOGGER.info('Subscription event stream is up to date.')
     else:
         singer.write_schema('itunes_subscriptions_event',
                             subscription_event_schema_,
@@ -83,12 +82,12 @@ def sync_date(dates_to_fetch,
                                   to_transform['float_keys'],
                                   schema='itunes_subscriptions_event')
             if ARGS.state:
-                prior_state = utils.load_tap_setting('state.json')
+                prior_state = utils.load_tap_setting(ARGS.state)
 
                 prior_state['subscription_event'] = next_date.format(
                     state_date_format)
 
-                utils.write_state(prior_state, 'state.json')
+                utils.write_state(prior_state, ARGS.state)
 
 
 def sync_subscription_events():
@@ -97,3 +96,5 @@ def sync_subscription_events():
     sync_date(dates_to_fetch, SUBSCRIPTION_EVENT_SCHEMA)
 
     LOGGER.info('Finished sync for itunes_subscription_event stream.')
+
+sync_subscription_events()
