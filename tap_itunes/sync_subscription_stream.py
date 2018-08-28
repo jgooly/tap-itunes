@@ -13,7 +13,7 @@ PARSER.add_argument(
 
 ARGS = PARSER.parse_args()
 LOGGER = singer.get_logger()
-CONFIG = utils.load_tap_setting(ARGS.config)
+CONFIG = utils.load_tap_setting(path=ARGS.config)
 STATE_DATE_FORMAT = '%Y-%m-%d'
 ITUNES_REQUEST_DATE_FORMAT = '%Y%m%d'
 TIMEZONE = 'America/Los_Angeles'
