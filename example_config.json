@@ -6,5 +6,6 @@
 	"mode": "Robot.XML",
 	"start_date": "enter start date in format: YYYY-MM-DD",
 	"endpoint_sales": "https://reportingitc-reporter.apple.com/reportservice/sales/v1",
-	"endpoint_finance": "https://reportingitc-reporter.apple.com/reportservice/finance/v1"
+	"endpoint_finance": "https://reportingitc-reporter.apple.com/reportservice/finance/v1",
+	"report_version": "1_1"
 }

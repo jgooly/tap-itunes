@@ -2,7 +2,8 @@
 **/ulib.py
 **/__pycache__/
 tap_itunes.egg-info/
-/tap_itunes/config.json
-/tap_itunes/state.json
+/tap_itunes/config*.json
+/tap_itunes/state*.json
 .idea/
 /tap_itunes/singer-check-tap-data/
+tap_itunes/args.py
