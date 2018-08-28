@@ -20,6 +20,7 @@ TIMEZONE = 'America/Los_Angeles'
 
 SUBSCRIPTION_EVENT_SCHEMA = utils.load_schema('subscription_event')
 
+
 # Determine if the streams need to be updated.
 def find_state():
     try:
