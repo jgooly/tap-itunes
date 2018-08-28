@@ -96,5 +96,3 @@ def sync_subscriptions():
     sync_date(dates_to_fetch, SUBSCRIPTION_SCHEMA)
 
     LOGGER.info('Finished sync for itunes_subscription stream.')
-
-sync_subscriptions()
