@@ -127,7 +127,7 @@ def process_records(file_header, file_data, n_state, int_keys, float_keys,
             dat = row.split('\t')
             data_dict = dict(zip(file_header, dat))
 
-            if schema == 'subscription':
+            if schema == 'itunes_subscriptions':
                 data_dict.update({'date': str(n_state.format('%Y-%m-%d'))})
 
             for key in data_dict:
